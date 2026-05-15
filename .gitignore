@@ -21,3 +21,16 @@ external/**
 
 # Node
 node_modules/
+
+# Local quarantine and raw migrated material
+archive/**
+!archive/
+!archive/README.md
+!archive/.gitkeep
+archive/from-portfolio-cleanup/
+
+# Raw external repositories and references
+external/**
+!external/
+!external/README.md
+!external/.gitkeep
