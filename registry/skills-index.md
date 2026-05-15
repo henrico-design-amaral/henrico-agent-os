@@ -1,23 +1,21 @@
 # Skills Index
 
-Este índice registra as skills oficiais do Henrico Agent OS.
+Catalog of all official skills in Henrico-Agent-OS.
 
-## Status
+## Core
+- [project-memory-auditor](../skills/core/project-memory-auditor/SKILL.md): Audits project memory consistency.
 
-- official: pronta para uso
-- draft: em criação
-- adapted: adaptada de fonte externa
-- archived: não usar sem revisão
+## Repository Hygiene
+- [repo-hygiene-cleaner](../skills/repo-hygiene/repo-hygiene-cleaner/SKILL.md): Cleans out-of-scope files and updates .gitignore.
 
-## Skills oficiais iniciais
+## Product & Strategy
+- [portfolio-strategist](../skills/product/portfolio-strategist/SKILL.md): Ensures portfolio content matches positioning.
 
-| Skill | Categoria | Status | Função |
-|---|---|---:|---|
-| project-memory-auditor | core | official | Auditar memória, escopo e continuidade de um projeto |
-| portfolio-strategist | product | official | Direcionar decisões do portfólio profissional |
-| design-system-auditor | design | official | Auditar tokens, componentes e consistência visual |
-| frontend-visual-reviewer | frontend | official | Revisar UI frontend contra padrões de qualidade |
-| accessibility-design-checker | accessibility | draft | Checar acessibilidade visual e estrutural |
-| research-synthesizer | research | draft | Sintetizar pesquisa em decisões acionáveis |
-| repo-hygiene-cleaner | repo-hygiene | official | Remover ruído, pastas externas e arquivos fora de escopo |
-| mcp-evaluator | mcp | draft | Avaliar MCPs antes de instalação |
+## Design
+- [design-system-auditor](../skills/design/design-system-auditor/SKILL.md): Validates UI against established tokens.
+
+## Frontend
+- [frontend-visual-reviewer](../skills/frontend/frontend-visual-reviewer/SKILL.md): Visual QA and code review for frontend.
+
+## MCP
+- [mcp-evaluator](../skills/mcp/mcp-evaluator/SKILL.md): Evaluates new MCP servers for security and utility.

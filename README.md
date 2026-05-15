@@ -1,106 +1,36 @@
 # Henrico Agent OS
 
-Biblioteca pessoal de skills, agents, MCPs, workflows e padrões operacionais para projetos de Henrico Amaral.
+A central library for skills, agents, MCPs, and workflows used by Henrico Amaral across multiple projects.
 
-Este repositório não pertence a nenhum projeto específico. Ele é a base operacional reutilizável para:
+## Purpose
 
-- Portfolio
-- LavaPro
-- SaaS
-- projetos futuros
-- rotinas de pesquisa
-- design system
-- UX research
-- frontend
-- acessibilidade
-- carreira
-- conteúdo
-- automação
+To provide a structured, versioned, and centralized source of truth for AI agent capabilities, keeping individual project repositories clean and focused on their product code.
 
-## Princípio central
+## Projects Served
 
-Projetos não devem armazenar bibliotecas completas de agentes ou skills.
+- **Portfolio**: Current professional portfolio.
+- **LavaPro**: Management product (Stand-by).
+- **SaaS**: Legacy archive and future experiments.
+- **Future Products**: Scalable structure for new initiatives.
 
-Projetos devem consumir skills por referência, cópia controlada ou instalação seletiva.
+## Structure
 
-## Estrutura
+- `/skills`: Curated and official skills for Antigravity/AI Agents.
+- `/agents`: Specific agent definitions and personas.
+- `/mcps`: Model Context Protocol configurations and reviews.
+- `/workflows`: Multi-agent orchestration and process definitions.
+- `/templates`: Blueprints for new skills, agents, and MCP reviews.
+- `/registry`: Indexes and catalogs of all available assets.
+- `/external`: Raw material and third-party sources (not yet curated).
+- `/adapted`: External assets modified for Henrico's specific workflows.
+- `/archive`: Deprecated or historical resources.
 
-```txt
-skills/
-  core/
-  design/
-  product/
-  research/
-  frontend/
-  accessibility/
-  content/
-  career/
-  mcp/
-  repo-hygiene/
+## How to use
 
-agents/
-  design/
-  product/
-  engineering/
-  research/
-  content/
-  governance/
+Before starting a task in any project, ensure relevant skills from this OS are available to your AI assistant.
 
-mcps/
-  registry/
-  candidates/
-  installed/
-  security-review/
+## Rules
 
-workflows/
-  portfolio/
-  saas/
-  lava-pro/
-  research/
-  content/
-  repository-maintenance/
-
-templates/
-  skill-template/
-  agent-template/
-  mcp-template/
-  audit-template/
-
-registry/
-  skills-index.md
-  agents-index.md
-  mcps-index.md
-  external-sources.md
-
-external/
-  README.md
-
-adapted/
-  README.md
-
-archive/
-  README.md
-```
-
-## Regra de uso
-
-- `external/` guarda materiais originais clonados ou copiados de terceiros.
-- `adapted/` guarda versões adaptadas para o fluxo de Henrico.
-- `skills/` guarda somente skills oficiais e limpas.
-- `agents/` guarda agentes com papéis claros.
-- `mcps/` guarda inventário, avaliação e configuração de MCPs.
-- `workflows/` guarda processos aplicáveis por projeto.
-- `archive/` guarda material antigo ou em quarentena.
-
-## Segurança
-
-Nunca instalar ou executar skill, script, MCP ou agente externo sem revisão.
-
-Toda skill externa deve passar por:
-
-1. leitura manual
-2. checagem de permissões
-3. remoção de instruções perigosas
-4. adaptação ao padrão Henrico
-5. registro no índice
-6. teste controlado
+1. **Cleanliness**: No project-specific product code here.
+2. **Curated First**: Only move skills to `/skills` after curation.
+3. **Consistency**: Use templates in `/templates` for new entries.

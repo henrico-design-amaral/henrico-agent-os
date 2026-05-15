@@ -1,32 +1,21 @@
-# MCP Review Template
+# MCP Review: [Server Name]
 
-## MCP name
+## Evaluation Date: YYYY-MM-DD
 
-## Source
+## Overview
+- **Source**: [URL]
+- **Category**: [e.g., Search, Git, Database]
+- **Status**: [Approved / Rejected / Pending]
 
-## Purpose
+## Security Audit
+- [ ] No local script execution without verification.
+- [ ] Limited access to credentials.
+- [ ] No unexpected external requests.
 
-## Required permissions
+## Utility
+[How this server helps Henrico's workflow]
 
-## Data touched
-
-## Local files touched
-
-## Network access
-
-## Authentication required
-
-## Risks
-
-## Safer alternatives
-
-## Decision
-
-- approved
-- rejected
-- candidate
-- installed
-
-## Installation notes
-
-## Rollback plan
+## Configuration
+```json
+// Example config here
+```

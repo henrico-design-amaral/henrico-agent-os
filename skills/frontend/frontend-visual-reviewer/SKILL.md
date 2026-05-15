@@ -1,44 +1,18 @@
 ---
 name: frontend-visual-reviewer
-description: Use this skill when reviewing or improving frontend UI quality, especially layout, responsiveness, hierarchy, visual polish, motion, and maintainability.
-version: 1.0.0
-status: official
-category: frontend
+description: Performs visual QA and code quality reviews for frontend projects.
 ---
 
 # Frontend Visual Reviewer
 
-## Purpose
+Focuses on the technical and aesthetic quality of frontend implementations.
 
-Review frontend UI with senior visual and implementation judgment.
+## Instructions
 
-## Use when
+1. **Review**: Check HTML structure, GSAP animations, and Tailwind usage.
+2. **Verify**: Ensure mobile-first responsiveness and smooth performance.
+3. **Polish**: Suggest refinements for micro-interactions and transitions.
 
-- UI looks generic
-- layout is inconsistent
-- mobile is weak
-- motion is excessive
-- hierarchy is unclear
-- CSS is difficult to maintain
+## Constraints
 
-## Process
-
-1. Read project rules.
-2. Inspect UI files.
-3. Identify layout system.
-4. Check typography scale.
-5. Check spacing rhythm.
-6. Check responsive behavior.
-7. Check motion.
-8. Check accessibility basics.
-9. Recommend minimal effective changes.
-
-## Output
-
-Return:
-
-- visual diagnosis
-- code-level risks
-- priority list
-- specific files to edit
-- proposed implementation approach
+- Avoid "vibe-only" feedback; use concrete technical suggestions.

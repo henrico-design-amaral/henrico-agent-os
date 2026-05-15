@@ -1,47 +1,18 @@
 ---
 name: design-system-auditor
-description: Use this skill when auditing visual consistency, tokens, typography, spacing, surfaces, motion, components, or DESIGN.md alignment in a product or portfolio.
-version: 1.0.0
-status: official
-category: design
+description: Validates UI implementation against the established design system tokens and principles.
 ---
 
 # Design System Auditor
 
-## Purpose
+Ensures that all styles and components adhere to the project's design system (e.g., Onyx & Gilded).
 
-Audit whether an interface is visually coherent and systematized.
+## Instructions
 
-## Check
+1. **Scan**: Inspect HTML and CSS for hardcoded values.
+2. **Compare**: Check against tokens in `ai-memory/03-design-system.md` or `tailwind.config`.
+3. **Correct**: Propose replacing ad-hoc styles with system-defined utilities.
 
-- tokens
-- typography
-- spacing
-- color usage
-- surfaces
-- grid
-- layout primitives
-- components
-- motion
-- responsive rules
-- accessibility basics
-- DESIGN.md alignment
+## Constraints
 
-## Process
-
-1. Read DESIGN.md or design memory if available.
-2. Inspect existing UI files.
-3. Identify repeated patterns.
-4. Identify one-off deviations.
-5. Separate systemic problems from local issues.
-6. Recommend corrections by priority.
-
-## Output
-
-Return:
-
-- system summary
-- inconsistencies
-- high-risk deviations
-- recommended token/component changes
-- do-not-repeat additions
+- Preserve accessibility (WCAG 2.2) above all else.

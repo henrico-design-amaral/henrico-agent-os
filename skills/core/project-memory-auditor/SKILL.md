@@ -1,46 +1,20 @@
 ---
 name: project-memory-auditor
-description: Use this skill when a project has persistent memory files and you need to validate scope, project rules, changelog, technical decisions, open issues, or conflicts before editing code.
-version: 1.0.0
-status: official
-category: core
+description: Audits project memory files (README, GEMINI.md, changelog) for consistency and accuracy.
 ---
 
 # Project Memory Auditor
 
-## Purpose
+This skill ensures that all project memory files are up to date and correctly reflect the current state of the repository.
 
-Audit a project's persistent memory before any relevant work.
+## Instructions
 
-## When to use
+1. **Scan**: Read `README.md`, `GEMINI.md`, and everything in `ai-memory/`.
+2. **Verify**: Compare documented state with the actual code and directory structure.
+3. **Report**: Highlight any discrepancies or outdated information.
+4. **Update**: Propose or apply corrections to maintain the "source of truth".
 
-Use when:
+## Constraints
 
-- starting work on an existing project
-- renaming a project folder
-- cleaning repository scope
-- preparing a commit
-- checking whether a task belongs to the active project
-- resolving conflicts between user request, memory, and code
-
-## Process
-
-1. Identify active project.
-2. Read project rule file, such as `GEMINI.md`, `AGENTS.md`, or equivalent.
-3. Read local memory, usually `/ai-memory`.
-4. Read global workspace memory if relevant.
-5. Inspect Git status.
-6. Detect conflicts.
-7. Report what is safe to change.
-8. Update memory only if requested or if the task includes memory maintenance.
-
-## Output
-
-Return:
-
-- active project
-- rule files found
-- memory files found
-- conflicts
-- Git scope status
-- safe next action
+- Never invent context.
+- Always check if a decision is already recorded before adding it.

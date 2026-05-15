@@ -1,37 +1,19 @@
 ---
 name: mcp-evaluator
-description: Use this skill before installing, enabling, or recommending any MCP server. It evaluates utility, permissions, data exposure, security risk, and project fit.
-version: 1.0.0
-status: draft
-category: mcp
+description: Evaluates new MCP servers for security, utility, and configuration requirements.
 ---
 
 # MCP Evaluator
 
-## Purpose
+Framework for vetting and integrating new Model Context Protocol servers.
 
-Evaluate MCP servers before installation or use.
+## Instructions
 
-## Process
+1. **Inspect**: Read documentation and source code (if available) for the new MCP.
+2. **Audit**: Perform a security review using the template in `templates/mcp-template/MCP-REVIEW.md`.
+3. **Test**: (In a safe environment) verify that tools work as expected.
+4. **Register**: Add the findings to `registry/mcps-index.md`.
 
-1. Identify MCP source and maintainer.
-2. Check purpose.
-3. Check required permissions.
-4. Check filesystem access.
-5. Check network access.
-6. Check authentication.
-7. Check secrets handling.
-8. Check whether it is needed for the current workflow.
-9. Prefer least-privilege configuration.
-10. Document decision in `mcps/`.
+## Constraints
 
-## Output
-
-Return:
-
-- approve/reject/candidate
-- reason
-- required permissions
-- risks
-- safer alternative
-- rollback plan
+- Never install an MCP without a recorded review.

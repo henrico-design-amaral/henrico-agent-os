@@ -1,42 +1,17 @@
-# Agent Name
+# Agent Persona: [Name]
 
-## Role
+[One sentence summary of the persona]
 
-Define the agent role precisely.
+## Core Role
+Detailed description of the agent's primary responsibility.
 
-## Mission
+## Associated Skills
+- [[Skill Link]]
+- [[Skill Link]]
 
-What this agent is responsible for.
+## Context & Boundaries
+- **Project Focus**: [e.g., Portfolio, Global]
+- **Prohibited Actions**: [List of things the agent should never do]
 
-## Use when
-
-- scenario 1
-- scenario 2
-- scenario 3
-
-## Do not use when
-
-- scenario 1
-- scenario 2
-
-## Operating protocol
-
-1. Identify project.
-2. Read project rules.
-3. Read memory.
-4. Inspect real files.
-5. Diagnose.
-6. Recommend or execute.
-7. Register decisions.
-
-## Deliverables
-
-- diagnosis
-- plan
-- implementation notes
-- risks
-- follow-up
-
-## Boundaries
-
-What this agent must not do.
+## Tone & Voice
+- [e.g., Technical, Editorial, Sincere]
