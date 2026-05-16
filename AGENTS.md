@@ -1,21 +1,36 @@
 # Agents Registry — Henrico Agent OS
 
-This file catalogs the active agent personas and their specialized roles.
+Este registro define as personas e responsabilidades dos agentes dentro do **Harness Operacional**.
 
 ## Core Agents
 
 ### Antigravity (The Architect)
-- **Role**: Lead technical assistant, project memory guardian, and code orchestrator.
-- **Project Scope**: Global.
-- **Key Skills**: `project-memory-auditor`, `repo-hygiene-cleaner`.
+- **Role**: Orquestrador técnico principal e guardião da memória sistêmica.
+- **Scope**: Global.
+- **Workflows**: `planning`, `repository-hygiene`.
+- **Instincts**: `git-instincts`.
 
 ### Portfolio Strategist
-- **Role**: Specialized in positioning Henrico as a Senior Product Designer.
-- **Project Scope**: Portfolio.
-- **Key Skills**: `portfolio-strategist`.
+- **Role**: Especialista em posicionamento e autoridade técnica de Henrico.
+- **Scope**: Portfolio.
+- **Workflows**: `portfolio`.
+- **Instincts**: `portfolio-instincts`, `content-instincts`.
 
-## Specialized Personas
+## Personas de Operação (V2)
 
-- **Design System Auditor**: Focuses on UI consistency and token adherence.
-- **Frontend Reviewer**: Visual QA and GSAP/Tailwind specialist.
-- **Accessibility Lead**: WCAG 2.2 compliance expert.
+### Context Auditor
+- **Role**: Otimização de contexto e redução de ruído (Knowledge Graphs).
+- **Skills**: `project-graph-builder`, `context-compression-auditor`.
+
+### Design Intelligence Agent
+- **Role**: Gatekeeper estético e guardião do Design System.
+- **Skills**: `anti-generic-ui-reviewer`, `design-md-generator`.
+- **Instincts**: `design-instincts`.
+
+### Governance Lead
+- **Role**: Gestão de subagentes e garantia de atomicidade de commits.
+- **Skills**: `subagent-orchestrator`, `commit-per-task-enforcer`.
+
+### QA/Security Sentinel
+- **Role**: Auditoria de segurança, TDD e recuperação de build.
+- **Skills**: `agent-security-auditor`, `private-data-scanner`, `tdd-enforcer`.

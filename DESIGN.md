@@ -1,24 +1,26 @@
 # Design Principles — Henrico Agent OS
 
-Guidelines for creating new skills, agents, and workflows to maintain consistency across the ecosystem.
+Este documento define os princípios de design que regem o **Harness Operacional**, garantindo que tanto o sistema quanto as UIs geradas por ele mantenham o padrão de excelência de Henrico.
 
-## Skill Design
+## Design de Componentes do Harness
 
-1. **Atomic**: One skill should do one thing exceptionally well.
-2. **Context-Aware**: Must check project memory before acting.
-3. **Safe**: Never perform destructive actions without verification.
-4. **Verifiable**: Should report exactly what was changed and why.
+1. **Atômico**: Cada skill deve resolver um problema técnico específico sem efeitos colaterais ocultos.
+2. **Context-Driven**: Toda ação deve ser precedida por uma auditoria de memória do projeto alvo.
+3. **Auditável**: O sistema deve deixar rastros claros de por que uma decisão foi tomada (logs, commits semânticos).
+4. **Resiliente**: Falhas de subagentes ou builds devem ser tratadas via `build-failure-resolver`.
 
-## Documentation Standard
+## Padrão Estético (Anti-Generic)
 
-Every skill must have a `SKILL.md` file following the standard template:
-- YAML Metadata
-- Clear Instructions
-- Examples
-- Constraints
+O harness impõe uma estética "Premium Editorial" em todos os projetos de produto:
 
-## Visual Standard (for UI Agents)
+- **Tokens Semânticos**: Uso rigoroso de variáveis de cor (HSL) e tipografia (Inter/Outfit).
+- **Grid de Elite**: Priorizar layouts baseados em bento grids, grids editoriais e proporção áurea.
+- **Micro-Interações**: Animações suaves (GSAP) que conferem vida e feedback à interface.
+- **Bloqueio de Clichês**: Rejeição automática de:
+  - Cores CSS nomeadas (`blue`, `red`).
+  - Fontes default do sistema (`Arial`, `Times`).
+  - Layouts "Bootstrap-style" (Navbar + Hero + 3 Cards).
 
-- **Technical**: Minimalist and precise.
-- **Editorial**: Strong typography and grid focus.
-- **Premium**: Avoid generic templates and placeholders.
+## Documentação North Star
+
+O `DESIGN.md` de cada projeto de produto é o "Contrato Visual" que os agentes de design devem seguir. Ele deve ser gerado pelo `design-md-generator` e auditado pelo `anti-generic-ui-reviewer`.

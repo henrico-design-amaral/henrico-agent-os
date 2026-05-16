@@ -1,12 +1,8 @@
 # Portfolio Workflow
 
-Workflow oficial para evolução do portfólio.
+Evolução contínua do portfólio profissional.
 
-1. Ler memória do projeto.
-2. Verificar Git status.
-3. Diagnosticar escopo.
-4. Não alterar visual antes de confirmar problemas estruturais.
-5. Alterar apenas o necessário.
-6. Atualizar memória.
-7. Validar.
-8. Commit dentro do projeto correto.
+## Etapas
+1. **Strategic Check**: `portfolio-strategist`.
+2. **Editorial Refinement**: Auditoria de métricas e cases.
+3. **Visual Parity**: Garantir consistência entre versões (v1, v2).

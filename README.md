@@ -1,36 +1,31 @@
-# Henrico Agent OS
+# Henrico Agent OS — Personal Operational Harness
 
-A central library for skills, agents, MCPs, and workflows used by Henrico Amaral across multiple projects.
+O Henrico-Agent-OS é um **Harness Operacional Pessoal** (Personal AI Operating System) projetado para centralizar inteligência, governança e execução automatizada em todos os projetos de Henrico Amaral.
 
-## Purpose
+Inspirado em arquiteturas de ponta (como ECC), este sistema atua como uma camada de abstração entre o usuário e a complexidade técnica, garantindo qualidade sistêmica e consistência estética.
 
-To provide a structured, versioned, and centralized source of truth for AI agent capabilities, keeping individual project repositories clean and focused on their product code.
+## Estrutura do Harness
 
-## Projects Served
+- **`/rules`**: Leis comportamentais e restrições inegociáveis (Segurança, Git, Design).
+- **`/skills`**: Capacidades técnicas atômicas e modulares.
+- **`/agents`**: Definições de personas especializadas para tarefas específicas.
+- **`/workflows`**: Processos orquestrados (Planning, TDD, Review).
+- **`/instincts`**: Heurísticas e intuições de design e engenharia de Henrico.
+- **`/commands`**: Atalhos CLI para ativação rápida de fluxos de trabalho.
+- **`/mcps`**: Integrações via Model Context Protocol.
+- **`/registry`**: Índices, catálogos e watchlist de ferramentas externas.
 
-- **Portfolio**: Current professional portfolio.
-- **LavaPro**: Management product (Stand-by).
-- **SaaS**: Legacy archive and future experiments.
-- **Future Products**: Scalable structure for new initiatives.
+## Projetos Ativos
+- **Portfolio**: Portfólio profissional de alto impacto.
+- **LavaPro**: Ecossistema de gestão em stand-by.
+- **SaaS**: Laboratório de experimentos e legado.
 
-## Structure
+## Pilares V2 (Harness Layer)
+1. **Context Compression**: Knowledge graphs para redução de carga cognitiva.
+2. **Design Intelligence**: Governança estética contra o "genérico".
+3. **Execution Governance**: Fatiamento atômico e orquestração de subagentes.
+4. **Quality & Security**: TDD rigoroso e auditoria de segurança proativa.
+5. **Continuous Learning**: Persistência de lições aprendidas na memória do sistema.
 
-- `/skills`: Curated and official skills for Antigravity/AI Agents.
-- `/agents`: Specific agent definitions and personas.
-- `/mcps`: Model Context Protocol configurations and reviews.
-- `/workflows`: Multi-agent orchestration and process definitions.
-- `/templates`: Blueprints for new skills, agents, and MCP reviews.
-- `/registry`: Indexes and catalogs of all available assets.
-- `/external`: Raw material and third-party sources (not yet curated).
-- `/adapted`: External assets modified for Henrico's specific workflows.
-- `/archive`: Deprecated or historical resources.
-
-## How to use
-
-Before starting a task in any project, ensure relevant skills from this OS are available to your AI assistant.
-
-## Rules
-
-1. **Cleanliness**: No project-specific product code here.
-2. **Curated First**: Only move skills to `/skills` after curation.
-3. **Consistency**: Use templates in `/templates` for new entries.
+## Regra de Ouro (Curação)
+Ferramentas externas (ECC, AgentShield, etc.) são tratadas como **candidatas** e só são integradas ao harness após auditoria de segurança, revisão de licença e adaptação aos padrões locais.
