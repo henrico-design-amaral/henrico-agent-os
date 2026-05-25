@@ -29,3 +29,22 @@ Inspirado em arquiteturas de ponta (como ECC), este sistema atua como uma camada
 
 ## Regra de Ouro (Curação)
 Ferramentas externas (ECC, AgentShield, etc.) são tratadas como **candidatas** e só são integradas ao harness após auditoria de segurança, revisão de licença e adaptação aos padrões locais.
+
+---
+
+## Phase 1 — Orquestrador documental mínimo
+
+A Fase 1 do Henrico Agent OS define a camada mínima de governança, contexto compartilhado, handoff e quality gates para coordenar ChatGPT, Codex local, Codex no Antigravity, GitHub e documentação em Markdown.
+
+Arquivos principais da Fase 1:
+
+- `FOUNDATION_BRIEF.md`
+- `PHASE_1_ORCHESTRATOR.md`
+- `TOOL_MAP.md`
+- `PROMPT_BOOTSTRAP.md`
+- `QUALITY_GATES.md`
+- `templates/`
+
+Regra central:
+
+Nenhuma IA é fonte da verdade. A fonte da verdade é o contexto versionável em Markdown.
