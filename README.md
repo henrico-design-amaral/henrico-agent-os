@@ -15,10 +15,13 @@ Inspirado em arquiteturas de ponta (como ECC), este sistema atua como uma camada
 - **`/mcps`**: Integrações via Model Context Protocol.
 - **`/registry`**: Índices, catálogos e watchlist de ferramentas externas.
 
-## Projetos Ativos
-- **Portfolio**: Portfólio profissional de alto impacto.
-- **LavaPro**: Ecossistema de gestão em stand-by.
-- **SaaS**: Laboratório de experimentos e legado.
+## Ecossistema de Projetos
+
+- **Portfolio**: Portfólio profissional — cases, posicionamento, site público.
+- **henrico.works**: Camada pública do ecossistema. Marca, landing, lab, systems, notes.
+- **CondoLogPro**: SaaS de gestão de condomínios — MVP local-first em desenvolvimento ativo.
+- **PersonalOps**: Gestão pessoal, finanças, rotinas e decisões operacionais.
+- **HenricoOPS**: Governa o ecossistema. henrico-agent-os é seu sistema operacional de agentes.
 
 ## Pilares V2 (Harness Layer)
 1. **Context Compression**: Knowledge graphs para redução de carga cognitiva.
@@ -36,14 +39,15 @@ Ferramentas externas (ECC, AgentShield, etc.) são tratadas como **candidatas** 
 
 A Fase 1 do Henrico Agent OS define a camada mínima de governança, contexto compartilhado, handoff e quality gates para coordenar ChatGPT, Codex local, Codex no Antigravity, GitHub e documentação em Markdown.
 
-Arquivos principais da Fase 1:
+Arquivos principais da Fase 1 (todos preenchidos com conteúdo real):
 
-- `FOUNDATION_BRIEF.md`
-- `PHASE_1_ORCHESTRATOR.md`
-- `TOOL_MAP.md`
-- `PROMPT_BOOTSTRAP.md`
-- `QUALITY_GATES.md`
-- `templates/`
+- `FOUNDATION_BRIEF.md` — tese central e princípio operacional
+- `PHASE_1_ORCHESTRATOR.md` — fluxo de sessão e regras de execução
+- `QUALITY_GATES.md` — gates operacionais de abertura, execução e fechamento
+- `PROMPT_BOOTSTRAP.md` — prompts de inicialização por ferramenta
+- `TOOL_MAP.md` — mapa de ferramentas com quando usar, quando não usar e riscos
+- `DECISIONS.md` — decisões arquiteturais registradas
+- `templates/` — templates de HANDOFF, TASKS, DECISIONS, SESSION_LOG, AGENTS
 
 Regra central:
 
