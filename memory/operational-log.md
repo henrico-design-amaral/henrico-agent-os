@@ -1,11 +1,81 @@
 # Henrico Agent OS — Operational Log
 
-## Sessão: 2026-06-22 — Fundação v0.1 publicada e sincronizada
+## Sessão: 2026-06-22 — Sprint 1: Fundação operacional do OS
 
 ### Estado final
 
 - **Branch**: `main`
-- **HEAD**: `7c43f79` docs: add official session prompts (#2)
+- **HEAD**: `8e02cbf` docs: complete agent os foundation gates
+- **Remote**: `https://github.com/henrico-design-amaral/henrico-agent-os.git`
+- **Status**: `main...origin/main` (limpo, sem divergência)
+
+### Arquivos alterados nesta sessão
+
+| Arquivo | Ação | Conteúdo |
+|---|---|---|
+| `QUALITY_GATES.md` | Preenchido (era vazio) | 9 gates operacionais: abertura, escopo, segurança, alteração, visual/design, build/teste, Git, pré-push, fechamento |
+| `PROMPT_BOOTSTRAP.md` | Preenchido (era vazio) | Prompts de inicialização por ferramenta (ChatGPT, Codex, Claude Code, Antigravity, agente genérico local) + prompt de encerramento |
+| `TOOL_MAP.md` | Preenchido (era vazio) | Mapa de 10 ferramentas com quando usar, quando não usar, riscos, comandos e evidências por projeto |
+| `DECISIONS.md` | Criado | 10 decisões arquiteturais com contexto, alternativas e impacto |
+| `README.md` | Atualizado | Removido LavaPro/SaaS; adicionados projetos reais; Phase 1 com descrições dos arquivos |
+
+### Arquivos intencionalmente não alterados
+
+- Portfolio — fora do escopo deste sprint
+- henrico.works — fora do escopo
+- CondoLogPro — fora do escopo
+- PersonalOps — fora do escopo
+- ANTIGRAVITY_GLOBAL_RULES.md — bloqueado
+- Skills legadas — aguardam Sprint 5
+- registry.md — aguarda sprint de limpeza
+
+### Decisões tomadas nesta sessão
+
+- DEC-001 a DEC-010 registradas em `DECISIONS.md`
+- Confirmado que os 3 arquivos vazios eram bloqueadores reais de adoção
+- Confirmado que arquivos de produto não foram tocados
+
+### Validações executadas
+
+| Gate | Status |
+|---|---|
+| Gate 0 — Abertura | ✅ estado limpo, branch main, remote correto |
+| Gate 1 — Escopo | ✅ escopo declarado e respeitado (apenas henrico-agent-os) |
+| Gate 2 — Segurança | ✅ nenhum dado sensível nos arquivos criados |
+| Gate 3 — Alteração | ✅ git diff --stat revisado — apenas os 5 arquivos do escopo |
+| Gate 6 — Git | ✅ commit semântico com mensagem completa |
+| Gate 7 — Pré-push | ✅ commits revisados antes do push |
+| Gate 8 — Fechamento | ✅ este log |
+
+### Commit final
+
+- **Hash:** `8e02cbf`
+- **Mensagem:** `docs: complete agent os foundation gates`
+- **Branch:** `main → origin/main`
+- **Arquivos:** 5 arquivos, 1206 inserções, 11 deleções
+
+### Pendências para Sprint 2 — Portfolio
+
+1. Corrigir paths obsoletos em `Portfolio/AGENTS.md` (seções 1 e 8): `!PROJETOS` → `04_PROJETOS_CONTEÚDO`
+2. Instanciar `HANDOFF.md` com estado atual do Portfolio
+3. Instanciar `DECISIONS.md` com decisões já tomadas (modal fix, WebP, i18n, hero)
+4. Gerar `DESIGN.md` do Portfolio via `design-md-generator` — tokens reais + prints de referência
+5. Referenciar skills no AGENTS.md: `portfolio-strategist`, `anti-generic-ui-reviewer`, `private-data-scanner`
+6. Adicionar instincts no AGENTS.md: portfolio, design, content
+7. Instanciar `SESSION_LOG.template.md` para próximas sessões
+
+### Próxima ação recomendada
+
+Iniciar Sprint 2 — `/goal Executar Sprint 2: governança do Portfolio`
+
+---
+
+## Sessão: 2026-06-22 — Sincronização com remote
+
+### Estado final
+
+- **Branch**: `main`
+- **HEAD**: `000cc0d` memory: add operational log — sync session 2026-06-22
 - **Remote**: `https://github.com/henrico-design-amaral/henrico-agent-os.git`
 - **Status**: `main...origin/main` (limpo, sem divergência)
 
@@ -30,22 +100,4 @@
 | 5 | Portfolio e henrico-works não tocados | ✅ |
 | 6 | PROJECT_INDEX.md já registrava o repo corretamente | ✅ (sem alteração necessária) |
 
-### Estrutura atual do repo (origin/main)
-
-- `skills/` — 18+ skills organizadas por domínio (context, core, design, execution, frontend, mcp, planning, product, quality, repo-hygiene, review, security, testing)
-- `workflows/` — 9 workflows
-- `registry/` — índices de agents, skills, rules, workflows, tools, context
-- `rules/` — regras por domínio (content, design, git, global, security)
-- `templates/` — templates de agent, mcp, skill, session, handoff, tasks, decisions
-- `commands/` — audit, cleanup, plan, review, secure
-- `instincts/` — content, design, git, portfolio
-- `docs/orchestration/` — OFFICIAL_SESSION_PROMPTS.md
-- `memory/` — este log
-
-### Nota arquitetural
-
-O commit `cee1924` (AI Runtime v0.1) não foi destruído — ele simplesmente não faz parte da história linear do remote. O remote já incorporou a estrutura equivalente e mais evoluída. A fundação v0.1 está **publicada e rastreável** via `origin/main`.
-
----
-
-*Log gerado em: 2026-06-22T20:22:00-03:00*
+*Log gerado em: 2026-06-22T20:39:00-03:00*
