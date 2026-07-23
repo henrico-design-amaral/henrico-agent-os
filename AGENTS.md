@@ -1,68 +1,21 @@
-# Agents Registry — Henrico Agent OS
+# Henrico Agent OS — repositório legado
 
-Este registro define as personas e responsabilidades dos agentes dentro do **Harness Operacional**.
+Este arquivo permanece apenas para compatibilidade histórica. O **HenricoOPS** é a autoridade única do ecossistema.
 
-## Core Agents
+## Fonte canônica
 
-### Antigravity (The Architect)
-- **Role**: Orquestrador técnico principal e guardião da memória sistêmica.
-- **Scope**: Global.
-- **Workflows**: `planning`, `repository-hygiene`.
-- **Instincts**: `git-instincts`.
+- Repositório: https://github.com/henrico-design-amaral/henricoops
+- Método integrado: `method/agent-os/`
+- Registry único de agentes: `registry/agents.unified.json`
+- Governança, capabilities, routing, memória e runtime: HenricoOPS
 
-### Portfolio Strategist
-- **Role**: Especialista em posicionamento e autoridade técnica de Henrico.
-- **Scope**: Portfolio.
-- **Workflows**: `portfolio`.
-- **Instincts**: `portfolio-instincts`, `content-instincts`.
+## Regra de transição
 
-## Personas de Operação (V2)
+- Não criar aqui novos agentes, skills, workflows ou regras canônicas.
+- Antes de usar qualquer conteúdo deste repositório, verificar a versão correspondente no HenricoOPS.
+- Se houver conflito, HenricoOPS prevalece.
+- O histórico permanece preservado até a auditoria de dependências e o arquivamento formal.
 
-### Context Auditor
-- **Role**: Otimização de contexto e redução de ruído (Knowledge Graphs).
-- **Skills**: `project-graph-builder`, `context-compression-auditor`.
+## Segurança
 
-### Design Intelligence Agent
-- **Role**: Gatekeeper estético e guardião do Design System.
-- **Skills**: `anti-generic-ui-reviewer`, `design-md-generator`.
-- **Instincts**: `design-instincts`.
-
-### Governance Lead
-- **Role**: Gestão de subagentes e garantia de atomicidade de commits.
-- **Skills**: `subagent-orchestrator`, `commit-per-task-enforcer`.
-
-### QA/Security Sentinel
-- **Role**: Auditoria de segurança, TDD e recuperação de build.
-- **Skills**: `agent-security-auditor`, `private-data-scanner`, `tdd-enforcer`.
-
-# AUTOPILOT — HENRICO-AGENT-OS
-
-O Antigravity pode operar automaticamente neste repositório para criar e editar:
-
-- rules/
-- skills/
-- agents/
-- workflows/
-- instincts/
-- commands/
-- registry/
-- templates/
-- README.md
-- AGENTS.md
-- DESIGN.md
-
-Não pode alterar automaticamente:
-
-- archive/from-portfolio-cleanup/
-- external/ com material bruto
-- arquivos de credenciais
-- scripts baixados de terceiros
-- MCPs instaláveis sem revisão
-
-Ferramentas externas devem ser registradas como candidate antes de qualquer instalação.
-
-Não executar scripts externos.
-
-Não instalar MCPs sem revisão.
-
-Não promover material de external/ para skills/ sem curadoria.
+Nenhum script externo, MCP ou credencial deve ser instalado ou executado sem os gates do HenricoOPS.
